@@ -36,7 +36,7 @@ class EditStudent extends Component {
 
       axios
         .post(
-          "http://localhost:6001/add/update/" + this.props.params.id,
+          "https://back-chess.vercel.app/add/update/" + this.props.params.id,
           studentdata
         )
         .then((res) => console.log(res.data));
@@ -54,7 +54,7 @@ class EditStudent extends Component {
     try {
       const lastId = this.props.params.id;
       // console.log(lastId);
-      const res = await axios.get(`http://localhost:6001/add/${lastId}`);
+      const res = await axios.get(`https://back-chess.vercel.app/add/${lastId}`);
       // console.log(res.data);
       this.setState({
         id: res.data._id,

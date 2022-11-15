@@ -18,7 +18,7 @@ export class AddName extends Component {
     if (this.validator.allValid()) {
       event.preventDefault();
       axios
-        .post("http://localhost:6001/addname", this.state)
+        .post("https://back-chess.vercel.app/addname", this.state)
         .then((res) => console.log("posting data", res.data))
         .catch((err) => console.log(err.message));
 

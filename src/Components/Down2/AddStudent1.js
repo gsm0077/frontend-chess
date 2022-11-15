@@ -24,7 +24,7 @@ export class AddStudent extends Component {
     if (this.validator.allValid()) {
       event.preventDefault();
       axios
-        .post("http://localhost:6001/add", this.state)
+        .post("https://back-chess.vercel.app/add", this.state)
         .then((res) => console.log("posting data", res.data))
         .catch((err) => console.log(err.message));
 
@@ -38,7 +38,7 @@ export class AddStudent extends Component {
 
   getApiData = async () => {
     try {
-      const res = await axios.get("http://localhost:6001/addname");
+      const res = await axios.get("https://back-chess.vercel.app/addname");
       const response = Object.values(res.data);
       const fres = response[1];
 

@@ -17,7 +17,7 @@ export class StudentList extends Component {
 
   getApiData = async () => {
     try {
-      const res = await axios.get("http://localhost:6001/add");
+      const res = await axios.get("https://back-chess.vercel.app/add");
       this.setState({ datas: res.data.content });
       console.log(this.state.datas);
     } catch (e) {
@@ -30,7 +30,7 @@ export class StudentList extends Component {
   }
 
   deleteStudentdata(id) {
-    axios.delete("http://localhost:6001/add/" + id).then((response) => {
+    axios.delete("https://back-chess.vercel.app/add/" + id).then((response) => {
       console.log(response.data);
     });
 
