@@ -1,0 +1,19 @@
+#topbotton{
+  margin: 0 60px;
+
+
+}
+#topbotton:hover{
+    transform: scale(110%);
+    color: rgb(17, 11, 11);
+   
+}
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 100% 50% ;
+    border: 3px solid black;
+    justify-content: center;
+    align-items: center;
+
+}

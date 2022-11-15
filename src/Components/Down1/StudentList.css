@@ -1,0 +1,21 @@
+button{
+    border:0px solid black;
+    background: none;
+
+}
+button:hover{
+    transform :scale(110%);
+}
+
+#linker{
+    text-decoration: none;
+    color:black
+}
+#linker:hover{
+    color:rgb(22, 214, 22);
+    transform: scale(110%);
+}
+
+#deleted:hover{
+    color: red;
+}
